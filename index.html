@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="titles">
+        <h1>Calculadora</h1>
+        <h2>Por <span class="name">Lucas Adan</span></h2>
+    </div>
+    <div class="calculator">
+        <input type="text" id="pantalla" readonly value="0">
+        <br>
+        <input type="button" id="buttonC" value="C" onclick="borrar()">
+        <input type="button" id="specials" value="&#8592;" onclick="borrarUltimoNumero()">
+        <input type="button" id="specials" value="/" onclick="agregar('/')">
+        <br>
+        <input type="button" value="7" onclick="agregar('7')">
+        <input type="button" value="8" onclick="agregar('8')">
+        <input type="button" value="9" onclick="agregar('9')">
+        <input type="button" id="specials" value="x" onclick="agregar('*')">
+        <br>
+        <input type="button" value="4" onclick="agregar('4')">
+        <input type="button" value="5" onclick="agregar('5')">
+        <input type="button" value="6" onclick="agregar('6')">
+        <input type="button" id="specials" value="-" onclick="agregar('-')">
+        <br>
+        <input type="button" value="1" onclick="agregar('1')">
+        <input type="button" value="2" onclick="agregar('2')">
+        <input type="button" value="3" onclick="agregar('3')">
+        <input type="button" id="specials" value="+" onclick="agregar('+')">
+        <br>
+        <input type="button" id="button0" value="0" onclick="agregar('0')">
+        <input type="button" id="specials" value="." onclick="agregar('.')">
+        <input type="button" id="resultado" value="=" onclick="calcular()">
+    </div>
+    <div class="instructions">
+        <h3>Instrucciones:</h3>
+        <p>Haz clic en los botones numéricos, luego utiliza los botones de operadores para realizar la operación
+            deseada.</p>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
